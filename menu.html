@@ -4,51 +4,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moon Cafe</title>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
-<body>
-    <header
-        class=" lg:w-[1900px] md:w-[1536px] sm:w-[1024px] W-[640PX] lg:P-4 p-2 lg:m-auto  flex lg:flex-col Md:flex-col flex-col justify-between  bg-[url(image/menuhd.jpg)] bg-center ">
-        <div class=" lg:w-[1850px] md:w-[1200px] sm:w-[900px] W-[540PX] flex justify-between lg:m-auto m-[20px]  ">
+<body class="font-['Poppins',sans-serif]">
 
+    <!-- HEADER SECTION -->
+    <header class="w-full min-h-[600px] lg:min-h-[750px]
+    bg-[url('image/menuhd.jpg')] bg-cover bg-center
+    flex flex-col px-4 sm:px-8 py-5">
+
+        <!-- NAVBAR -->
+        <div class="w-full max-w-7xl mx-auto
+        flex flex-wrap justify-between items-center gap-4">
+
+            <!-- LOGO -->
             <div>
-                <h1
-                    class="lg:text-[70px] md:text-[50px] text-[20px] lg:font-semibold font-light text-[#F9E6CD] lg:mx-[20px]  ">
-                    <i class="fa-solid fa-star-and-crescent"></i>Moon
+
+                <h1 class="text-[#F9E6CD] text-3xl sm:text-5xl
+                lg:text-7xl font-semibold
+                font-['Playfair_Display',serif]
+                transition duration-500 hover:scale-105">
+
+                    <i class="fa-solid fa-star-and-crescent"></i>
+                    Moon
+
                 </h1>
-                <p class="text-[#F9E6CD] mx-[70px] font-semibold lg:text-2xl  text-sm">The Dreamy Gardern Cefe </p>
+
+                <p class="text-[#F9E6CD] ml-5 sm:ml-12
+                font-semibold text-xs sm:text-sm lg:text-xl">
+
+                    The Dreamy Garden Cafe
+
+                </p>
+
             </div>
 
+
+            <!-- NAVIGATION -->
             <nav class="hidden md:block">
-                <ul class="text-[#F9E6CD] font-semibold lg:text-2xl text-md flex gap-8 my-[20px] ">
-                    <a href="Home">
-                        <li>Home</li>
-                    </a>
-                    <a href="Menu">
-                        <li>Menu</li>
-                    </a>
-                    <a href="Gellery">
-                        <li>Gellery</li>
-                    </a>
-                    <a href="Our Story">
-                        <li>Our Story</li>
-                    </a>
-                    <a href="Contant">
-                        <li>Contant</li>
-                    </a>
+
+                <ul class="text-[#F9E6CD] font-semibold
+                lg:text-lg flex flex-wrap gap-4 lg:gap-7">
+
+                    <li>
+                        <a href="Home" class="hover:text-[#E8C18A] transition duration-300">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Menu" class="hover:text-[#E8C18A] transition duration-300">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Gellery" class="hover:text-[#E8C18A] transition duration-300">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Our Story" class="hover:text-[#E8C18A] transition duration-300">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Contant" class="hover:text-[#E8C18A] transition duration-300">
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
+
             </nav>
-            <div
-                class=" lg:w-[200px] lg:h-[50px] p-2 text-[#F9E6CD] font-bold border-[#F9E6CD] border-[2px] rounded-[50px] text-lg m-[40px]">
-                <i class="fa-solid fa-calendar-days"></i> <button class=" "></i>Reserve a Tabal</button>
+
+
+            <!-- RESERVE BUTTON -->
+            <div class="border-2 border-[#F9E6CD]
+            rounded-full px-3 sm:px-5 py-2
+            text-[#F9E6CD] font-bold text-xs sm:text-sm lg:text-base
+            transition duration-500 hover:bg-[#F9E6CD]
+            hover:text-[#262917]">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <button type="button">
+                    Reserve a Table
+                </button>
+
             </div>
+
         </div>
+
+
+        <!-- HERO CONTENT -->
+        <div class="w-full max-w-7xl mx-auto
+        flex flex-col justify-center flex-1
+        px-2 sm:px-5 py-10">
+
+            <div class="max-w-xl text-[#E8C18A]">
+
+                <h2 class="text-4xl sm:text-6xl lg:text-8xl
+                font-normal text-[#F9E6CD]
+                font-['Playfair_Display',serif]
+                animate-pulse">
+
+                    Our
+
+                    <span class="text-[#E8C18A] italic
+                    font-['Playfair_Display',serif]">
+
+                        Menu
+
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <p class="max-w-sm sm:max-w-lg
+            text-[#F9E6CD] font-medium
+            text-base sm:text-xl lg:text-2xl
+            my-5">
+
+                A delightful blend of flavours
+                in a dreamy ambience.
+
+            </p>
+
+
+            <!-- EXPLORE BUTTON -->
+            <div>
+
+                <a href="#menu-categories">
+
+                    <button class="text-[#262917]
+                    px-6 py-3 rounded-full font-bold
+                    bg-[#F9E6CD] text-sm sm:text-base
+                    transition-all duration-500
+                    hover:scale-110 hover:bg-[#E8C18A]">
+
+                        Explore Our Menu
+
+                    </button>
+
+                </a>
+
+            </div>
+
         </div>
+
+    </header>
+
+
+
+    <!-- MENU CATEGORY SECTION -->
+    <section id="menu-categories" class="w-full bg-[url('image/whitebc.jpg')]
+    bg-cover bg-center px-4 sm:px-8 py-12">
+
+        <div class="w-full max-w-7xl mx-auto">
+
+            <!-- SECTION HEADING -->
+            <h2 class="text-center text-3xl sm:text-4xl
+            lg:text-5xl font-semibold text-[#262917]
+            font-['Playfair_Display',serif]
+            mb-10 animate-pulse">
+
+                Explore Our Categories
+
+            </h2>
+
+
+            <!-- CATEGORY CARDS -->
+            <div class="grid grid-cols-1
+            sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                <!-- INDIAN SNACKS -->
+                <div class="w-full min-h-[190px]
+                flex flex-col items-center justify-center
+                gap-3 p-5 border shadow-sm rounded-xl
+                bg-white/40
+
+                transition-all duration-500
+                hover:scale-105 hover:shadow-xl
+                hover:bg-[#F9E6CD]">
+
+                    <i class="fa-solid fa-bowl-food
+                    text-4xl text-[#262917]
+                    transition duration-500
+                    hover:scale-125 hover:text-[#A66B3F]">
+
+                    </i>
+
+                    <h3 class="font-semibold text-[#262917]
+                    text-xl text-center
+                    font-['Playfair_Display',serif]">
+
+                        Indian Snacks
+
+                    </h3>
+
+                    <p class="text-[#262917]
+                    text-sm sm:text-base font-medium text-center">
+
+                        Traditional Bites
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- FAST FOOD -->
+                <div class="w-full min-h-[190px]
+                flex flex-col items-center justify-center
+                gap-3 p-5 border shadow-sm rounded-xl
+                bg-white/40
+
+                transition-all duration-500
+                hover:scale-105 hover:shadow-xl
+                hover:bg-[#F9E6CD]">
+
+                    <i class="fa-solid fa-burger
+                    text-4xl text-[#262917]
+                    transition duration-500
+                    hover:scale-125 hover:text-[#A66B3F]">
+
+                    </i>
+
+                    <h3 class="font-semibold text-[#262917]
+                    text-xl text-center
+                    font-['Playfair_Display',serif]">
+
+                        Fast Food
+
+                    </h3>
+
+                    <p class="text-[#262917]
+                    text-sm sm:text-base font-medium text-center">
+
+                        Quick Bites
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- CAKES AND DESSERTS -->
+                <div class="w-full min-h-[190px]
+                flex flex-col items-center justify-center
+                gap-3 p-5 border shadow-sm rounded-xl
+                bg-white/40
+
+                transition-all duration-500
+                hover:scale-105 hover:shadow-xl
+                hover:bg-[#F9E6CD]">
+
+                    <i class="fa-solid fa-cheese
+                    text-4xl text-[#262917]
+                    transition duration-500
+                    hover:scale-125 hover:text-[#A66B3F]">
+
+                    </i>
+
+                    <h3 class="font-semibold text-[#262917]
+                    text-xl text-center
+                    font-['Playfair_Display',serif]">
+
+                        Cakes & Desserts
+
+                    </h3>
+
+                    <p class="text-[#262917]
+                    text-sm sm:text-base font-medium text-center">
+
+                        Sweet Happiness
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- BEVERAGES -->
+                <div class="w-full min-h-[190px]
+                flex flex-col items-center justify-center
+                gap-3 p-5 border shadow-sm rounded-xl
+                bg-white/40
+
+                transition-all duration-500
+                hover:scale-105 hover:shadow-xl
+                hover:bg-[#F9E6CD]">
+
+                    <i class="fa-solid fa-glass-water
+                    text-4xl text-[#262917]
+                    transition duration-500
+                    hover:scale-125 hover:text-[#A66B3F]">
+
+                    </i>
+
+                    <h3 class="font-semibold text-[#262917]
+                    text-xl text-center
+                    font-['Playfair_Display',serif]">
+
+                        Beverages
+
+                    </h3>
+
+                    <p class="text-[#262917]
+                    text-sm sm:text-base font-medium text-center">
+
+                        Sip & Relax
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
 
 
 </body>
