@@ -8,14 +8,14 @@
 
     <title>Moon Cafe | Menu</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -24,100 +24,155 @@
 
 <body class="font-['Poppins',sans-serif] w-full min-w-0 overflow-x-clip bg-[#F9E6CD] dark:bg-[#26251F]">
 
-    <header class="sticky top-0  w-full min-w-0
+    <!-- HEADER -->
+    <header class="relative w-full min-h-[350px] sm:min-h-[420px] lg:min-h-[500px]
     bg-[url('image/menuhd.jpg')] bg-cover bg-center bg-no-repeat
-    flex flex-col px-3 min-[375px]:px-4 min-[768px]:px-5 min-[1280px]:px-6
-    py-5 overflow-hidden">
+    flex flex-col overflow-hidden">
 
-        <div class="w-full min-w-0 max-w-none mx-auto
-        flex flex-wrap justify-between items-center gap-3">
+        <div class="absolute inset-0 bg-black/35"></div>
 
-            <div class="transition duration-500 hover:scale-105">
+        <!-- FIXED NAVBAR -->
+        <div class="fixed top-0 left-0 z-50 w-full bg-[#202717]/90 backdrop-blur-md shadow-md">
 
-                <p class="text-[#F9E6CD] text-3xl min-[768px]:text-5xl min-[1280px]:text-6xl
-                font-semibold font-['Playfair_Display',serif]">
+            <div class="w-full max-w-[1700px] mx-auto
+            flex flex-wrap justify-between items-center
+            gap-4 px-4 sm:px-6 lg:px-8 py-4">
 
-                    <i class="fa-solid fa-star-and-crescent"></i>
-                    Moon
+                <a href="index.html" class="flex items-center gap-3">
 
-                </p>
+                    <div class="text-[#F9E6CD] text-4xl sm:text-5xl
+                    transition duration-500 hover:scale-110">
 
-                <p class="text-[#F9E6CD] ml-5 min-[768px]:ml-12
-                font-semibold text-xs min-[768px]:text-sm">
+                        <i class="fa-solid fa-star-and-crescent"></i>
 
-                    The Dreamy Garden Cafe
+                    </div>
 
-                </p>
+                    <div>
+
+                        <h1 class="text-[#F9E6CD] text-3xl sm:text-4xl
+                        font-semibold font-['Playfair_Display',serif]">
+
+                            MOON
+
+                        </h1>
+
+                        <p class="text-[#F9E6CD] text-[10px] sm:text-xs font-semibold">
+
+                            The Dreamy Garden Cafe
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <nav class="w-full md:w-auto" aria-label="Main navigation">
+
+                    <ul class="flex flex-wrap justify-center
+                    items-center gap-4 sm:gap-6 lg:gap-9
+                    text-[#F9E6CD] text-xs sm:text-sm lg:text-base font-semibold">
+
+                        <li>
+                            <a href="index.html"
+                                class="hover:text-[#E8C18A] transition duration-300">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="menu.html"
+                                class="text-[#E8C18A] underline underline-offset-8">
+                                Menu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html"
+                                class="hover:text-[#E8C18A] transition duration-300">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#story"
+                                class="hover:text-[#E8C18A] transition duration-300">
+                                Our Story
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#contact"
+                                class="hover:text-[#E8C18A] transition duration-300">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <a href="index.html#contact"
+                    class="border-2 border-[#E8C18A] rounded-full
+                    px-4 py-2 text-[#F9E6CD] font-semibold text-xs sm:text-sm
+                    transition duration-500 hover:bg-[#E8C18A]
+                    hover:text-[#262917]">
+
+                    <i class="fa-regular fa-calendar-days mr-1"></i>
+                    Reserve a Table
+
+                </a>
 
             </div>
-
-            <nav class="w-full min-[768px]:w-auto" aria-label="Main navigation">
-
-                <ul class="text-[#F9E6CD] font-semibold
-                text-xs min-[768px]:text-sm min-[1280px]:text-base
-                flex flex-wrap justify-center gap-3 min-[768px]:gap-5 min-[1280px]:gap-7">
-
-                    <li><a href="index.html" class="hover:text-[#E8C18A] transition duration-300">Home</a></li>
-
-                    <li><a href="menu.html" class="hover:text-[#E8C18A] transition duration-300">Menu</a></li>
-
-                    <li><a href="gallery.html" class="hover:text-[#E8C18A] transition duration-300">Gallery</a></li>
-
-                    <li><a href="index.html#story" class="hover:text-[#E8C18A] transition duration-300">Our Story</a></li>
-
-                    <li><a href="index.html#contact" class="hover:text-[#E8C18A] transition duration-300">Contact</a></li>
-
-                </ul>
-
-            </nav>
-
-            <a href="index.html#contact" class="border-2 border-[#F9E6CD] rounded-full
-                px-3 min-[768px]:px-5 py-2 text-[#F9E6CD]
-                font-bold text-xs min-[768px]:text-sm
-                transition duration-500 hover:bg-[#F9E6CD]
-                hover:text-[#262917]">
-
-                <i class="fa-solid fa-calendar-days"></i>
-                Reserve a Table
-
-            </a>
 
         </div>
 
-        <div class="w-full min-w-0 max-w-none mx-auto flex flex-col
-        justify-center px-1 min-[768px]:px-3
-        py-12 min-[768px]:py-16 min-[1280px]:py-20">
+        <!-- MENU HERO CONTENT -->
+        <div class="relative z-10 w-full max-w-[1700px] mx-auto
+        flex flex-col justify-center flex-1
+        px-5 sm:px-8 lg:px-10 pt-28 pb-12">
 
-            <div class="w-full max-w-xl text-[#E8C18A]">
+            <div class="max-w-2xl">
 
-                <h1 class="text-4xl min-[768px]:text-6xl min-[1280px]:text-8xl
-                font-normal text-[#F9E6CD]
-                font-['Playfair_Display',serif] transition duration-500">
+                <h2 class="text-5xl sm:text-7xl lg:text-8xl
+                text-[#F9E6CD] font-normal
+                font-['Playfair_Display',serif]">
 
-                    Our <span class="text-[#E8C18A] italic">Menu</span>
+                    Our
 
-                </h1>
+                    <span class="italic text-[#E8C18A]">
+                        Menu
+                    </span>
 
-            </div>
+                </h2>
 
-            <p class="w-full max-w-sm min-[768px]:max-w-lg text-[#F9E6CD]
-            font-medium text-base min-[768px]:text-xl min-[1280px]:text-2xl my-5">
+                <p class="text-[#F9E6CD] text-base sm:text-xl
+                mt-5 max-w-md text-center sm:text-left">
 
-                A delightful blend of flavours
-                in a dreamy ambience.
+                    A delightful blend of flavours
+                    in a dreamy ambience.
 
-            </p>
+                </p>
 
-            <div>
-                <a href="#menu-categories" class="inline-block text-[#262917]
-                    px-6 py-3 rounded-full font-bold
-                    bg-[#F9E6CD] text-sm min-[768px]:text-base
-                    transition-all duration-500
-                    hover:scale-105 hover:bg-[#E8C18A]">
+                <div class="flex items-center gap-4 mt-5
+                text-[#E8C18A] max-w-[300px]">
+
+                    <div class="h-[2px] bg-[#E8C18A] flex-1"></div>
+
+                    <i class="fa-solid fa-moon text-2xl"></i>
+
+                    <div class="h-[2px] bg-[#E8C18A] flex-1"></div>
+
+                </div>
+
+                <a href="#menu-categories"
+                    class="inline-block mt-6 bg-[#F9E6CD] text-[#262917]
+                    px-6 py-3 rounded-full font-bold text-sm sm:text-base
+                    transition-all duration-500 hover:scale-105 hover:bg-[#E8C18A]">
 
                     Explore Our Menu
 
                 </a>
+
             </div>
 
         </div>
@@ -191,7 +246,6 @@
                         </p>
 
                     </div>
-
 
                     <div class="w-full min-w-0 flex flex-col items-center justify-center
                     gap-3 p-5 border border-[#A66B3F]/40
@@ -388,7 +442,6 @@
 
                 <div class="w-full min-w-0 flex flex-col gap-10">
 
-
                     <section class="w-full min-w-0">
 
                         <h2 class="text-center mb-6 text-2xl min-[768px]:text-3xl
@@ -565,7 +618,6 @@
         <p class="text-[#E8C18A] mt-3 text-base min-[768px]:text-lg font-semibold">
             The Dreamy Garden Cafe
         </p>
-
 
         <div class="flex items-center justify-center
         gap-7 mt-7 text-2xl text-[#F9E6CD]">
