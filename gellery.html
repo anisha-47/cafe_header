@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Moon Cafe | Gallery</title>
- 
+
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
         crossorigin="anonymous">
- 
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
- 
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
@@ -110,6 +113,7 @@
 
                 </nav>
 
+                <!-- RESERVE BUTTON -->
 
                 <a href="index.html#contact"
                     class="border-2 border-[#E8C18A] rounded-full
@@ -126,7 +130,8 @@
 
         </div>
 
-         <div class="relative z-10 w-full max-w-[1500px] mx-auto
+
+        <div class="relative z-10 w-full max-w-[1500px] mx-auto
         flex flex-col justify-center flex-1
         px-6 sm:px-12 lg:px-16 py-12">
 
@@ -173,9 +178,7 @@
     px-4 sm:px-7 lg:px-10 py-10 overflow-hidden">
 
         <div class="w-full max-w-[1500px] mx-auto">
-
-            <!-- GALLERY CATEGORIES -->
-
+ 
             <div  
             class="flex flex-wrap justify-center items-center
             gap-3 sm:gap-4 lg:gap-5 mb-8">
@@ -216,7 +219,9 @@
                     Dining & Cabana
 
                 </a>
- 
+
+                <!-- FOOD AND COFFEE -->
+
                 <a href="#food"
                     class="flex items-center justify-center gap-2
                     border border-[#B88B55] text-[#262917]
@@ -243,9 +248,213 @@
 
             </div>
  
-            
+            <div id="all-moments"
+            class="grid grid-cols-1 md:grid-cols-2
+            gap-4 sm:gap-5">
+ 
+                <div id="dining"
+                class="relative w-full h-[260px] sm:h-[320px]
+                lg:h-[360px] overflow-hidden rounded-xl
+                border-2 border-[#C99B5B]/50 shadow-lg
+                group">
 
-        
+                    <img src="image/cabana.jpg"
+                        alt="Private Cabana"
+                        class="w-full h-full object-cover
+                        transition duration-700 group-hover:scale-110">
+
+                    <div class="absolute inset-0
+                    bg-gradient-to-t from-black/80
+                    via-transparent to-transparent">
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-5 sm:p-6">
+
+                        <p class="text-[#E8C18A] text-xs
+                        sm:text-sm font-semibold tracking-wider">
+
+                            <i class="fa-solid fa-leaf mr-2"></i>
+                            PRIVATE CABANA
+
+                        </p>
+
+                        <h3 class="text-[#FFF0D8] text-2xl
+                        sm:text-3xl font-semibold
+                        font-['Playfair_Display',serif]">
+
+                            Cozy Moonlight
+
+                        </h3>
+
+                    </div>
+
+                </div>
+ 
+                <div id="garden"
+                class="relative w-full h-[260px] sm:h-[320px]
+                lg:h-[360px] overflow-hidden rounded-xl
+                border-2 border-[#C99B5B]/50 shadow-lg
+                group">
+
+                    <img src="image/garden-dining.jpg"
+                        alt="Garden Dining"
+                        class="w-full h-full object-cover
+                        transition duration-700 group-hover:scale-110">
+
+                    <div class="absolute inset-0
+                    bg-gradient-to-t from-black/80
+                    via-transparent to-transparent">
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-5 sm:p-6">
+
+                        <p class="text-[#E8C18A] text-xs
+                        sm:text-sm font-semibold tracking-wider">
+
+                            <i class="fa-solid fa-leaf mr-2"></i>
+                            GARDEN DINING
+
+                        </p>
+
+                        <h3 class="text-[#FFF0D8] text-2xl
+                        sm:text-3xl font-semibold
+                        font-['Playfair_Display',serif]">
+
+                            Magical Evenings
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="relative md:col-span-2
+                w-full h-[280px] sm:h-[360px] lg:h-[400px]
+                overflow-hidden rounded-xl
+                border-2 border-[#C99B5B]/50 shadow-lg
+                group">
+
+                    <img src="image/outdoor.jpg"
+                        alt="Outdoor Garden Ambience"
+                        class="w-full h-full object-cover
+                        transition duration-700 group-hover:scale-110">
+
+                    <div class="absolute inset-0
+                    bg-gradient-to-t from-black/80
+                    via-transparent to-transparent">
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-5 sm:p-7">
+
+                        <p class="text-[#E8C18A] text-xs
+                        sm:text-sm font-semibold tracking-wider">
+
+                            <i class="fa-solid fa-leaf mr-2"></i>
+                            OUTDOOR AMBIENCE
+
+                        </p>
+
+                        <h3 class="text-[#FFF0D8] text-2xl
+                        sm:text-3xl lg:text-4xl font-semibold
+                        font-['Playfair_Display',serif]">
+
+                            Under The Stars
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div id="food"
+                class="relative w-full h-[260px] sm:h-[320px]
+                overflow-hidden rounded-xl
+                border-2 border-[#C99B5B]/50 shadow-lg
+                group">
+
+                    <img src="image/coffee-gallery.jpg"
+                        alt="Coffee Moments"
+                        class="w-full h-full object-cover
+                        transition duration-700 group-hover:scale-110">
+
+                    <div class="absolute inset-0
+                    bg-gradient-to-t from-black/80
+                    via-transparent to-transparent">
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-5">
+
+                        <p class="text-[#E8C18A] text-xs
+                        font-semibold tracking-wider">
+
+                            <i class="fa-solid fa-mug-hot mr-2"></i>
+                            FOOD & COFFEE
+
+                        </p>
+
+                        <h3 class="text-[#FFF0D8] text-2xl
+                        sm:text-3xl font-semibold
+                        font-['Playfair_Display',serif]">
+
+                            Coffee & Conversations
+
+                        </h3>
+
+                    </div>
+
+                </div>
+ 
+                <div id="special"
+                class="relative w-full h-[260px] sm:h-[320px]
+                overflow-hidden rounded-xl
+                border-2 border-[#C99B5B]/50 shadow-lg
+                group">
+
+                    <img src="image/special-moments.png"
+                        alt="Special Moments"
+                        class="w-full h-full object-cover
+                        transition duration-700 group-hover:scale-110">
+
+                    <div class="absolute inset-0
+                    bg-gradient-to-t from-black/80
+                    via-transparent to-transparent">
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-5">
+
+                        <p class="text-[#E8C18A] text-xs
+                        font-semibold tracking-wider">
+
+                            <i class="fa-solid fa-gift mr-2"></i>
+                            SPECIAL MOMENTS
+
+                        </p>
+
+                        <h3 class="text-[#FFF0D8] text-2xl
+                        sm:text-3xl font-semibold
+                        font-['Playfair_Display',serif]">
+
+                            Beautiful Memories
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+  
+
+    
 
 </body>
 
