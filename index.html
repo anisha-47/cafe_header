@@ -1,732 +1,533 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#262917">
 
-    <title>MOON Dreamy Garden Cafe</title>
+  <title>Moon Cafe | The Dreamy Garden Cafe</title>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Tailwind CSS 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
 </head>
 
-<body class="m-0 bg-[#F9E6CD] font-['Poppins'] overflow-x-hidden scroll-smooth">
+<body class="w-full overflow-x-hidden bg-[#F9E6CD] font-sans text-[#262917] dark:bg-[#1d2018] dark:text-[#F9E6CD]">
 
-    <main class="w-full max-w-[1900px] mx-auto">
+  <!-- HEADER -->
+  <header class="w-full bg-[#262917] bg-[url('image/topback.jpg')] bg-cover bg-center px-4 py-5 sm:px-6 lg:px-10">
 
-        <!-- HEADER / HERO -->
+    <div class="mx-auto flex w-full flex-col justify-between gap-6 xl:flex-row xl:items-center">
 
-        <header id="home" class="min-h-[650px] lg:min-h-[700px] flex flex-col justify-between bg-cover bg-center"
-            style="background-image:url('image/topback.jpg')">
+      <!-- Logo -->
+      <div>
+        <h1 class="text-4xl font-semibold text-[#F9E6CD] sm:text-5xl 2xl:text-7xl">
+          <i class="fa-solid fa-star-and-crescent"></i> Moon
+        </h1>
 
-            <!-- NAVBAR -->
+        <p class="ml-8 text-sm font-semibold text-[#F9E6CD] sm:text-base">
+          The Dreamy Garden Cafe
+        </p>
+      </div>
 
-            <div class="w-full px-5 md:px-10 lg:px-14 py-5
-    flex flex-col md:flex-row items-center justify-between gap-5">
+      <!-- Navigation -->
+      <nav aria-label="Main navigation">
+        <ul class="flex flex-wrap gap-4 text-sm font-semibold text-[#F9E6CD] sm:gap-7 sm:text-lg 2xl:text-2xl">
 
-                <div class="text-[#F9E6CD] text-center md:text-left">
+          <li><a href="#home" class="transition-colors duration-300 hover:text-[#E8C18A]">Home</a></li>
+          <li><a href="#menu" class="transition-colors duration-300 hover:text-[#E8C18A]">Menu</a></li>
+          <li><a href="#gallery" class="transition-colors duration-300 hover:text-[#E8C18A]">Gallery</a></li>
+          <li><a href="#story" class="transition-colors duration-300 hover:text-[#E8C18A]">Our Story</a></li>
+          <li><a href="#contact" class="transition-colors duration-300 hover:text-[#E8C18A]">Contact</a></li>
 
-                    <h1 class="text-4xl lg:text-6xl font-semibold 
-            ">
-                        <i class="fa-solid fa-star-and-crescent animate-bounce"></i>MOON
-                    </h1>
-                    <p class="text-sm lg:text-base mx-[60px] font-semibold">The Dreamy Garden Café
-                    </p>
-                </div>
-                <nav>
-                    <ul class="flex flex-wrap justify-center gap-4 lg:gap-9
-            text-[#F9E6CD] text-sm lg:text-lg font-medium">
+        </ul>
+      </nav>
 
-                        <li><a href="#home" class="hover:text-[#E8C18A] transition duration-300">Home</a></li>
+      <!-- Reservation -->
+      <a href="#contact"
+        class="inline-flex w-fit items-center gap-2 rounded-full border-2 border-[#F9E6CD] px-5 py-3 font-semibold text-[#F9E6CD] transition-all duration-300 hover:bg-[#F9E6CD] hover:text-[#262917]">
+        <i class="fa-solid fa-calendar-days"></i>
+        Reserve a Table
+      </a>
 
-                        <li><a href="#menu" class="hover:text-[#E8C18A] transition duration-300">Menu</a></li>
+    </div>
 
-                        <li><a href="#gallery" class="hover:text-[#E8C18A] transition duration-300">Gallery</a></li>
+    <!-- Hero Content -->
+    <div id="home" class="mx-auto w-full py-16 sm:py-20 lg:py-28 2xl:py-36">
 
-                        <li><a href="#story" class="hover:text-[#E8C18A] transition duration-300">Our Story</a></li>
+      <div class="w-full sm:w-3/4 lg:w-1/2">
 
-                        <li><a href="#contact" class="hover:text-[#E8C18A] transition duration-300">Contact</a></li>
+        <h2 class="text-4xl font-bold leading-tight text-[#F9E6CD] sm:text-5xl xl:text-6xl 2xl:text-7xl">
+          A Little Escape Under the
+          <span class="font-serif italic text-[#E8C18A]">Moon</span>
+        </h2>
 
-                    </ul>
+        <p class="my-6 text-lg font-semibold text-[#F9E6CD] sm:text-xl lg:text-2xl">
+          Coffee, calm evenings & unforgettable moments.
+        </p>
 
-                </nav>
+        <a href="#menu"
+          class="inline-block rounded-full bg-[#F9E6CD] px-7 py-3 font-bold text-[#262917] transition-all duration-300 hover:scale-105 hover:bg-[#E8C18A]">
+          Explore Our Menu
+          <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
 
-                <a href="#contact" class="border-2 border-[#F9E6CD] rounded-full px-6 py-3
-                  text-[#F9E6CD] font-semibold whitespace-nowrap hover:bg-[#F9E6CD] hover:text-[#262917]
-                   transition duration-300">
-                    <i class="fa-regular fa-calendar-days mr-2"></i>
-                    Reserve a Table
-                </a>
-            </div>
-            <div class="px-6 md:px-12 lg:px-16 py-10 ">
-                <div class="max-w-[650px]  hover:-translate-y-1
-            transition duration-300 ">
-                    <h2 class="text-[#F9E6CD] text-4xl md:text-6xl  hover:-translate-y-1
-            transition duration-300
-            lg:text-7xl leading-tight font-semibold">
-                        A Little Escape
-                        <br>
-                        Under the
+      </div>
 
-                        <span class="italic text-[#E8C18A]">
-                            Moon
-                        </span>
+    </div>
 
-                    </h2>
+    <!-- Hero Features -->
+    <div class="mx-auto flex w-full flex-col justify-between gap-6 border-t border-[#F9E6CD]/30 pt-6 lg:flex-row lg:items-center">
 
-                    <p class="text-[#F9E6CD] text-lg md:text-2xl
-            mt-5 max-w-[400px]  hover:-translate-y-1
-            transition duration-300"> Coffee, calm evenings & unforgettable moments. </p>
+      <ul class="flex flex-col gap-4 text-base text-[#F9E6CD] sm:flex-row sm:flex-wrap sm:gap-8 lg:text-lg 2xl:text-2xl">
 
-                    <a href="#menu" class="inline-block bg-[#F9E6CD] text-[#262917]
-            px-8 py-4 rounded-full font-semibold mt-7
-            hover:bg-[#E8C18A] hover:-translate-y-1
-            transition duration-300">
-                        Explore Our Menu
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
+        <li>
+          <i class="fa-solid fa-mug-hot mr-2"></i>
+          Great Coffee
+        </li>
 
-                    </a>
+        <li>
+          <i class="fa-brands fa-pagelines mr-2"></i>
+          Peaceful Ambience
+        </li>
 
-                </div>
+        <li>
+          <i class="fa-regular fa-heart mr-2"></i>
+          Memorable Moments
+        </li>
 
-            </div>
+      </ul>
 
+      <p class="font-serif text-2xl italic text-[#F9E6CD] sm:text-3xl">
+        Good Vibes Only
+        <i class="fa-regular fa-heart"></i>
+      </p>
 
-            <!-- HERO BOTTOM -->
+    </div>
 
-            <div class="px-6 md:px-12 lg:px-16 py-5
-    flex flex-col md:flex-row justify-between items-center
-    gap-5 text-[#F9E6CD]">
+  </header>
 
-                <div class="flex flex-wrap justify-center gap-5 md:gap-8
-        text-sm md:text-lg animate-pulse">
 
-                    <span>
-                        <i class="fa-solid fa-mug-hot mr-2 text-xl"></i>
-                        Great Coffee
-                    </span>
+  <main>
 
-                    <span>
-                        <i class="fa-brands fa-pagelines mr-2 text-xl"></i>
-                        Peaceful Ambience
-                    </span>
+    <!-- WHY CHOOSE US -->
+    <section id="story"
+      class="w-full bg-[url('image/whitebc.jpg')] bg-cover bg-center px-4 py-12 sm:px-8 lg:px-12">
 
-                    <span>
-                        <i class="fa-regular fa-heart mr-2 text-xl"></i>
-                        Memorable Moments
-                    </span>
+      <div class="mx-auto grid w-full grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-5">
 
-                </div>
+        <!-- Introduction -->
+        <article class="flex flex-col justify-center rounded-lg p-5 shadow-md transition-all duration-300 hover:shadow-xl">
 
-                <p class="text-3xl md:text-4xl italic animate-pulse">
-                    Good Vibes Only ♡
-                </p>
+          <p class="mb-3 text-sm font-bold tracking-widest">
+            WHY CHOOSE US
+          </p>
 
-            </div>
+          <h2 class="text-2xl font-bold sm:text-3xl">
+            More Than Just a Cafe
+          </h2>
 
-        </header>
+          <p class="my-4 font-medium leading-relaxed">
+            <span class="text-xl font-bold">At MOON,</span>
+            we create a peaceful space where great coffee meets beautiful moments.
+          </p>
 
+          <a href="#contact"
+            class="w-fit rounded-full bg-[#262917] px-6 py-3 font-bold text-[#F9E6CD] transition-all duration-300 hover:scale-105 hover:bg-[#414632]">
+            Know More
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
 
-        <!-- WHY CHOOSE US -->
+        </article>
 
-        <section id="story" class="px-[18px] md:px-10 lg:px-[75px] py-12 lg:py-16
-bg-cover bg-center" style="background-image:url('image/whitebc.jpg')">
+        <!-- Feature 1 -->
+        <article class="rounded-lg p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5
-    gap-5 items-center">
+          <img src="image/icon1.jpg" alt="Signature coffee"
+            class="mx-auto my-5 w-16 rounded-full object-cover transition-transform duration-500 hover:scale-110">
 
-                <!-- INTRO -->
+          <h3 class="text-lg font-bold">
+            Signature Coffee & Beverages
+          </h3>
 
-                <div class="lg:col-span-1 p-4">
+          <p class="mt-2 font-medium">
+            Unique Moon Menu
+          </p>
 
-                    <p class="text-xs tracking-[4px] text-[#262917] mb-3">
-                        ── WHY CHOOSE US ──
-                    </p>
+        </article>
 
-                    <h2 class="text-3xl lg:text-4xl text-[#262917]
-            font-semibold animate-pulse">
+        <!-- Feature 2 -->
+        <article class="rounded-lg p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-                        More Than Just a Café
+          <img src="image/icon2.jpg" alt="Private cabana dining"
+            class="mx-auto my-5 w-16 rounded-full object-cover transition-transform duration-500 hover:scale-110">
 
-                    </h2>
+          <h3 class="text-lg font-bold">
+            Private Cabana Dining
+          </h3>
 
-                    <p class="text-[#262917] text-sm mt-4 leading-7">
+          <p class="mt-2 font-medium">
+            For Couples & Groups
+          </p>
 
-                        At MOON, we create a peaceful space where
-                        great coffee meets beautiful moments.
+        </article>
 
-                    </p>
+        <!-- Feature 3 -->
+        <article class="rounded-lg p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-                    <a href="#contact" class="inline-block bg-[#262917] text-[#F9E6CD]
-            px-7 py-3 rounded-full font-semibold mt-5
-            hover:bg-[#46502b] hover:-translate-y-1
-            transition duration-300">
+          <img src="image/icon3.jpg" alt="Garden ambience"
+            class="mx-auto my-5 w-16 rounded-full object-cover transition-transform duration-500 hover:scale-110">
 
-                        Know More
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
+          <h3 class="text-lg font-bold">
+            Serene Garden Ambience
+          </h3>
 
-                    </a>
+        </article>
 
-                </div>
+        <!-- Feature 4 -->
+        <article class="rounded-lg p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
+          <img src="image/icon4.jpg" alt="Special occasions"
+            class="mx-auto my-5 w-16 rounded-full object-cover transition-transform duration-500 hover:scale-110">
 
-                <!-- FEATURE 1 -->
+          <h3 class="text-lg font-bold">
+            Perfect for Every Occasion
+          </h3>
 
-                <div class="text-center p-5 border-l border-[#D9B47D]
-        rounded-xl hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
+        </article>
 
-                    <img src="image/icon1.jpg" alt="Coffee" class="w-16 h-16 rounded-full mx-auto mb-4
-            animate-bounce">
+      </div>
 
-                    <h3 class="text-xl text-[#262917] font-semibold">
-                        Signature Coffee & Beverages
-                    </h3>
+    </section>
 
-                    <p class="text-sm text-[#262917] mt-2">
-                        (Unique Moon Menu)
-                    </p>
 
-                </div>
+    <!-- SPECIAL MENU -->
+    <section id="menu"
+      class="w-full bg-[#F9E6CD] bg-[url('image/whitebc.jpg')] bg-cover bg-center px-4 py-14 dark:bg-[#292c22] sm:px-8 lg:px-12">
 
-                <div class="text-center p-5 border-l border-[#D9B47D]
-        rounded-xl hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
+      <div class="mx-auto w-full">
 
-                    <img src="image/icon2.jpg" alt="Cabana" class="w-16 h-16 rounded-full mx-auto mb-4
-            animate-bounce">
+        <div class="mb-10 text-center">
 
-                    <h3 class="text-xl text-[#262917] font-semibold">
-                        Private Cabana Dining
-                    </h3>
+          <h2 class="font-serif text-3xl font-bold sm:text-4xl">
+            Our Special Menu
+          </h2>
 
-                    <p class="text-sm text-[#262917] mt-2">
-                        (for Couples & Groups)
-                    </p>
+          <p class="mt-3 text-lg font-semibold sm:text-xl">
+            A little magic in every sip and bite.
+          </p>
 
-                </div>
+        </div>
 
-                <div class="text-center p-5 border-l border-[#D9B47D]
-        rounded-xl hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
+        <div class="grid grid-cols-1 items-center gap-6 sm:grid-cols-2 xl:grid-cols-6">
 
-                    <img src="image/icon3.jpg" alt="Garden" class="w-16 h-16 rounded-full mx-auto mb-4
-            animate-bounce">
+          <!-- Menu Banner -->
+          <div class="overflow-hidden rounded-2xl sm:col-span-2 xl:col-span-1">
 
-                    <h3 class="text-xl text-[#262917] font-semibold">
-                        Serene Garden Ambience
-                    </h3>
+            <img src="image/coffe.jpg" alt="Moon Cafe coffee collection"
+              class="w-full rounded-2xl object-cover transition-transform duration-500 hover:scale-110">
 
-                </div>
+          </div>
 
-                <div class="text-center p-5 border-l border-[#D9B47D]
-                     rounded-xl hover:-translate-y-2 hover:shadow-xl
-                     transition duration-500">
+          <!-- Menu Item 1 -->
+          <article class="overflow-hidden rounded-xl p-3 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-                    <img src="image/icon4.jpg" alt="Heart" class="w-16 h-16 rounded-full mx-auto mb-4
-                     animate-bounce">
+            <img src="image/moonlight.jpg" alt="Moonlight Latte"
+              class="w-full rounded-lg object-cover">
 
-                    <h3 class="text-xl text-[#262917] font-semibold">
-                        Perfect for Every Occasion
-                    </h3>
+            <h3 class="mt-3 text-lg font-bold">Moonlight</h3>
+            <p class="font-medium">Latte</p>
+            <p class="mt-2 font-bold">₹189</p>
 
-                </div>
+          </article>
 
-            </div>
+          <!-- Menu Item 2 -->
+          <article class="overflow-hidden rounded-xl p-3 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-        </section>
+            <img src="image/midnight.jpg" alt="Midnight Mocha"
+              class="w-full rounded-lg object-cover">
 
+            <h3 class="mt-3 text-lg font-bold">Midnight</h3>
+            <p class="font-medium">Mocha</p>
+            <p class="mt-2 font-bold">₹219</p>
 
-        <!-- SPECIAL MENU -->
+          </article>
 
-        <section id="menu" class="px-[18px] md:px-10 lg:px-[75px] py-12 lg:py-16
-bg-cover bg-center" style="background-image:url('image/whitebc.jpg')">
+          <!-- Menu Item 3 -->
+          <article class="overflow-hidden rounded-xl p-3 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-            <div class="text-center mb-9">
+            <img src="image/pink.jpg" alt="Pink Moon Frappe"
+              class="w-full rounded-lg object-cover">
 
-                <h2 class="text-3xl md:text-5xl text-[#262917]
-        font-semibold animate-pulse">
+            <h3 class="mt-3 text-lg font-bold">Pink Moon</h3>
+            <p class="font-medium">Frappe</p>
+            <p class="mt-2 font-bold">₹199</p>
 
-                    ── Our Special Menu ──
+          </article>
 
-                </h2>
+          <!-- Menu Item 4 -->
+          <article class="overflow-hidden rounded-xl p-3 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-                <p class="text-[#262917] mt-2">
-                    A little magic in every sip and bite.
-                </p>
+            <img src="image/crescent.jpg" alt="Crescent Cold Brew"
+              class="w-full rounded-lg object-cover">
 
-            </div>
+            <h3 class="mt-3 text-lg font-bold">Crescent</h3>
+            <p class="font-medium">Cold Brew</p>
+            <p class="mt-2 font-bold">₹250</p>
 
+          </article>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2
-    lg:grid-cols-7 gap-5 items-stretch">
+          <!-- Menu Categories -->
+          <aside class="rounded-xl p-4 shadow-md">
 
-                <!-- COFFEE BACKGROUND -->
+            <h3 class="mb-4 text-xl font-bold">
+              Our Menu Categories
+            </h3>
 
-                <div class="hidden lg:block lg:col-span-2 h-[390px]
-        rounded-2xl bg-cover bg-center hover:scale-105
-        transition duration-500" style="background-image:url('image/coffe.jpg')">
-                </div>
+            <ul class="flex flex-col gap-4 font-medium">
 
-                <div class="bg-[#F9E6CD] rounded-xl overflow-hidden
-        shadow-md hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
+              <li>
+                <i class="fa-solid fa-mug-hot mr-2"></i>
+                Coffee & Signature Drinks
+              </li>
 
-                    <img src="image/moonlight.jpg" alt="Moonlight Latte" class="w-full h-48 object-cover hover:scale-105
-            transition duration-500">
+              <li>
+                <i class="fa-solid fa-martini-glass mr-2"></i>
+                Mocktails & Coolers
+              </li>
 
-                    <div class="text-center p-3">
+              <li>
+                <i class="fa-solid fa-cookie mr-2"></i>
+                Snacks & Starters
+              </li>
 
-                        <h3 class="text-xl font-semibold text-[#262917]">
-                            Moonlight
-                        </h3>
+              <li>
+                <i class="fa-solid fa-bowl-food mr-2"></i>
+                Pasta & Main Course
+              </li>
 
-                        <p>Latte</p>
+              <li>
+                <i class="fa-solid fa-stroopwafel mr-2"></i>
+                Desserts
+              </li>
 
-                        <p class="font-bold mt-2">₹189</p>
+            </ul>
 
-                    </div>
+            <a href="#contact"
+              class="mt-6 inline-block rounded-full bg-[#262917] px-5 py-3 font-bold text-[#F9E6CD] transition-all duration-300 hover:scale-105 hover:bg-[#414632]">
+              View Full Menu
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
 
-                </div>
+          </aside>
 
+        </div>
 
-                <!-- MENU 2 -->
+      </div>
 
-                <div class="bg-[#F9E6CD] rounded-xl overflow-hidden
-        shadow-md hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
+    </section>
 
-                    <img src="image/midnight.jpg" alt="Midnight Mocha" class="w-full h-48 object-cover">
 
-                    <div class="text-center p-3">
+    <!-- GALLERY -->
+    <section id="gallery"
+      class="w-full bg-[#262917] bg-[url('image/greenbc.jpg')] bg-cover bg-center px-4 py-14 sm:px-8 lg:px-12">
 
-                        <h3 class="text-xl font-semibold text-[#262917]">
-                            Midnight
-                        </h3>
+      <div class="mx-auto grid w-full grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
 
-                        <p>Mocha</p>
+        <!-- Gallery Introduction -->
+        <div class="flex flex-col justify-center">
 
-                        <p class="font-bold mt-2">₹219</p>
+          <h2 class="font-serif text-4xl font-bold italic text-[#F9E6CD] sm:text-5xl">
+            Our Gallery
+          </h2>
 
-                    </div>
+          <p class="my-5 text-lg font-semibold text-[#F9E6CD] sm:text-xl">
+            A glimpse of the magical moments at MOON.
+          </p>
 
-                </div>
+          <a href="#menu"
+            class="w-fit rounded-full bg-[#F9E6CD] px-6 py-3 font-bold text-[#262917] transition-all duration-300 hover:scale-105 hover:bg-[#E8C18A]">
+            Explore Our Menu
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
 
+        </div>
 
-                <!-- MENU 3 -->
+        <!-- Gallery Images -->
+        <figure class="overflow-hidden rounded-2xl">
+          <img src="image/Romantic.jpg" alt="Romantic cafe ambience"
+            class="w-full rounded-2xl object-cover transition-transform duration-500 hover:scale-110">
+        </figure>
 
-                <div class="bg-[#F9E6CD] rounded-xl overflow-hidden
-        shadow-md hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
+        <figure class="overflow-hidden rounded-2xl">
+          <img src="image/date.jpg" alt="Special date at Moon Cafe"
+            class="w-full rounded-2xl object-cover transition-transform duration-500 hover:scale-110">
+        </figure>
 
-                    <img src="image/pink.jpg" alt="Pink Moon Frappe" class="w-full h-48 object-cover">
+        <figure class="overflow-hidden rounded-2xl">
+          <img src="image/gellery.jpg" alt="Moon Cafe garden"
+            class="w-full rounded-2xl object-cover transition-transform duration-500 hover:scale-110">
+        </figure>
 
-                    <div class="text-center p-3">
+        <figure class="overflow-hidden rounded-2xl">
+          <img src="image/desart.jpg" alt="Delicious cafe desserts"
+            class="w-full rounded-2xl object-cover transition-transform duration-500 hover:scale-110">
+        </figure>
 
-                        <h3 class="text-xl font-semibold text-[#262917]">
-                            Pink Moon
-                        </h3>
+      </div>
 
-                        <p>Frappe</p>
+    </section>
 
-                        <p class="font-bold mt-2">₹199</p>
 
-                    </div>
+    <!-- CUSTOMER REVIEWS -->
+    <section
+      class="w-full bg-[#F9E6CD] bg-[url('image/whitebk.jpg')] bg-cover bg-center px-4 py-14 dark:bg-[#292c22] sm:px-8 lg:px-12">
 
-                </div>
+      <div class="mx-auto w-full">
 
+        <div class="mb-10 text-center">
 
-                <!-- MENU 4 -->
+          <h2 class="font-serif text-3xl font-bold sm:text-4xl">
+            What Our Guests Say
+          </h2>
 
-                <div class="bg-[#F9E6CD] rounded-xl overflow-hidden
-        shadow-md hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
+          <p class="mt-3 font-semibold">
+            Moments that stay with us...
+          </p>
 
-                    <img src="image/crescent.jpg" alt="Crescent Cold Brew" class="w-full h-48 object-cover">
+        </div>
 
-                    <div class="text-center p-3">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
 
-                        <h3 class="text-xl font-semibold text-[#262917]">
-                            Crescent
-                        </h3>
+          <figure class="overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="image/riya.jpg" alt="Guest review by Riya"
+              class="w-full object-cover transition-transform duration-500 hover:scale-105">
+          </figure>
 
-                        <p>Cold Brew</p>
+          <figure class="overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="image/aman.jpg" alt="Guest review by Aman"
+              class="w-full object-cover transition-transform duration-500 hover:scale-105">
+          </figure>
 
-                        <p class="font-bold mt-2">₹250</p>
+          <figure class="overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img src="image/sneha.jpg" alt="Guest review by Sneha"
+              class="w-full object-cover transition-transform duration-500 hover:scale-105">
+          </figure>
 
-                    </div>
+        </div>
 
-                </div>
+      </div>
 
+    </section>
 
-                <!-- MENU CATEGORIES -->
+  </main>
 
-                <div class="lg:col-span-6 xl:col-span-1
-        bg-[#F9E6CD] p-5 rounded-xl shadow-md
-        hover:shadow-xl transition duration-500">
 
-                    <h3 class="text-xl font-semibold text-[#262917] mb-5">
-                        Our Menu Categories
-                    </h3>
+  <!-- FOOTER -->
+  <footer id="contact"
+    class="w-full bg-[#262917] bg-[url('image/greenbc.jpg')] bg-cover bg-center px-4 py-10 sm:px-8 lg:px-12">
 
-                    <ul class="flex flex-col gap-4 text-sm text-[#262917]">
+    <div class="mx-auto flex w-full flex-col justify-between gap-6 border-b border-yellow-200/50 pb-8 lg:flex-row lg:items-center">
 
-                        <li>
-                            <i class="fa-solid fa-mug-hot mr-3"></i>
-                            Coffee & Signature Drinks
-                        </li>
+      <p class="text-lg font-bold text-[#F9E6CD] sm:text-xl">
+        <i class="fa-regular fa-clock mr-2"></i>
+        Business Hours: Open Daily, 4 PM - 12 AM
+      </p>
 
-                        <li>
-                            <i class="fa-solid fa-martini-glass mr-3"></i>
-                            Mocktails & Coolers
-                        </li>
+      <a href="tel:+919876543210"
+        class="text-lg font-semibold text-[#F9E6CD] transition-colors duration-300 hover:text-[#E8C18A]">
+        <i class="fa-solid fa-phone mr-2"></i>
+        +91 9876543210
+      </a>
 
-                        <li>
-                            <i class="fa-solid fa-cookie mr-3"></i>
-                            Snacks & Starters
-                        </li>
+      <a href="mailto:hello@mooncafe.com"
+        class="w-fit rounded-full bg-[#F9E6CD] px-6 py-3 font-bold text-[#262917] transition-all duration-300 hover:scale-105 hover:bg-[#E8C18A]">
+        <i class="fa-solid fa-calendar-days mr-2"></i>
+        Reserve a Table
+        <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
 
-                        <li>
-                            <i class="fa-solid fa-bowl-food mr-3"></i>
-                            Pasta & Main Course
-                        </li>
+    </div>
 
-                        <li>
-                            <i class="fa-solid fa-stroopwafel mr-3"></i>
-                            Desserts
-                        </li>
 
-                    </ul>
+    <!-- Footer Bottom -->
+    <div class="mx-auto flex w-full flex-col justify-between gap-8 py-8 lg:flex-row lg:items-center">
 
-                    <a href="#contact" class="block text-center bg-[#262917] text-[#F9E6CD]
-            px-4 py-3 rounded-full mt-6 font-semibold
-            hover:bg-[#46502b] transition duration-300">
+      <!-- Footer Logo -->
+      <div>
 
-                        View Full Menu
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
+        <h2 class="text-3xl font-semibold text-[#F9E6CD] sm:text-5xl">
+          <i class="fa-solid fa-star-and-crescent"></i>
+          Moon
+        </h2>
 
-                    </a>
+        <p class="ml-8 font-semibold text-[#F9E6CD]">
+          The Dreamy Garden Cafe
+        </p>
 
-                </div>
+      </div>
 
-            </div>
 
-        </section>
+      <!-- Footer Tagline -->
+      <ul class="flex flex-wrap gap-4 font-semibold text-[#F9E6CD] sm:gap-6">
 
+        <li>GOOD COFFEE.</li>
+        <li>GOOD MOOD.</li>
+        <li>GOOD COMPANY.</li>
 
-        <!-- GALLERY -->
+      </ul>
 
-        <section id="gallery" class="px-[18px] md:px-10 lg:px-[75px] py-12 lg:py-16
-bg-cover bg-center" style="background-image:url('image/greenbc.jpg')">
 
-            <div class="grid grid-cols-1 sm:grid-cols-2
-    lg:grid-cols-5 gap-5 items-center">
+      <!-- Social Media -->
+      <nav aria-label="Social media links">
 
-                <!-- GALLERY INTRO -->
+        <ul class="flex gap-5 text-3xl text-[#F9E6CD]">
 
-                <div class="text-[#F9E6CD]">
+          <li>
+            <a href="#" aria-label="Instagram"
+              class="transition-colors duration-300 hover:text-[#E8C18A]">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
 
-                    <h2 class="text-4xl md:text-5xl font-semibold italic
-            animate-pulse">
+          <li>
+            <a href="#" aria-label="Facebook"
+              class="transition-colors duration-300 hover:text-[#E8C18A]">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
 
-                        Our Gallery ✦
+          <li>
+            <a href="#" aria-label="YouTube"
+              class="transition-colors duration-300 hover:text-[#E8C18A]">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
 
-                    </h2>
+          <li>
+            <a href="#" aria-label="Pinterest"
+              class="transition-colors duration-300 hover:text-[#E8C18A]">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </li>
 
-                    <p class="text-lg mt-5 max-w-[250px]">
+        </ul>
 
-                        A glimpse of the magical moments at MOON.
+      </nav>
 
-                    </p>
+    </div>
 
-                    <a href="#contact" class="inline-block bg-[#F9E6CD] text-[#262917]
-            px-7 py-3 rounded-full font-semibold mt-6
-            hover:bg-[#E8C18A] hover:-translate-y-1
-            transition duration-300">
+    <p class="text-center text-sm text-[#F9E6CD]/70">
+      © 2026 Moon Cafe. All Rights Reserved.
+    </p>
 
-                        Explore More
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-
-                    </a>
-
-                </div>
-
-
-                <!-- GALLERY IMAGES -->
-
-                <img src="image/Romantic.jpg" alt="Romantic Cabana" class="w-full h-[250px] object-cover rounded-xl
-        border-2 border-[#E8C18A] hover:scale-105
-        hover:shadow-xl transition duration-500">
-
-                <img src="image/date.jpg" alt="Dinner Date" class="w-full h-[250px] object-cover rounded-xl
-        border-2 border-[#E8C18A] hover:scale-105
-        hover:shadow-xl transition duration-500">
-
-                <img src="image/gellery.jpg" alt="Garden Gallery" class="w-full h-[250px] object-cover rounded-xl
-        border-2 border-[#E8C18A] hover:scale-105
-        hover:shadow-xl transition duration-500">
-
-                <img src="image/desart.jpg" alt="Coffee and Dessert" class="w-full h-[250px] object-cover rounded-xl
-        border-2 border-[#E8C18A] hover:scale-105
-        hover:shadow-xl transition duration-500">
-
-            </div>
-
-        </section>
-
-
-        <!-- GUEST REVIEWS -->
-
-        <section class="px-[18px] md:px-10 lg:px-[75px]
-py-12 lg:py-16 bg-cover bg-center" style="background-image:url('image/whitebk.jpg')">
-
-            <div class="text-center mb-8">
-
-                <h2 class="text-3xl md:text-5xl text-[#262917]
-        font-semibold animate-pulse">
-
-                    What Our Guests Say
-
-                </h2>
-
-                <p class="text-[#262917] mt-2">
-                    Moments that stay with us...
-                </p>
-
-            </div>
-
-
-            <div class="grid grid-cols-1 md:grid-cols-2
-    lg:grid-cols-3 gap-6">
-
-
-                <!-- REVIEW 1 -->
-
-                <div class="bg-[#F9E6CD]/80 p-6 rounded-2xl
-        shadow-md flex flex-col sm:flex-row items-center
-        gap-5 hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
-
-                    >
-
-                    <div>
-
-                        <p class="text-sm text-[#262917]">
-                            "A beautiful place with amazing coffee.
-                            The ambience is just magical!"
-                        </p>
-
-                        <h3 class="font-semibold mt-4">
-                            Riya Sharma
-                        </h3>
-
-                        <p class="text-[#E8A000] mt-1">
-                            ★★★★★
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- REVIEW 2 -->
-
-                <div class="bg-[#F9E6CD]/80 p-6 rounded-2xl
-        shadow-md flex flex-col sm:flex-row items-center
-        gap-5 hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
-
-                    <div>
-
-                        <p class="text-sm text-[#262917]">
-                            "Perfect spot for date night.
-                            Loved the vibe!"
-                        </p>
-
-                        <h3 class="font-semibold mt-4">
-                            Aman Verma
-                        </h3>
-
-                        <p class="text-[#E8A000] mt-1">
-                            ★★★★★
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- REVIEW 3 -->
-
-                <div class="bg-[#F9E6CD]/80 p-6 rounded-2xl
-        shadow-md flex flex-col sm:flex-row items-center
-        gap-5 hover:-translate-y-2 hover:shadow-xl
-        transition duration-500">
-
-                    <div>
-
-                        <p class="text-sm text-[#262917]">
-                            "Best café in Jaipur. Peaceful,
-                            elegant and delicious!"
-                        </p>
-
-                        <h3 class="font-semibold mt-4">
-                            Sneha Mehta
-                        </h3>
-
-                        <p class="text-[#E8A000] mt-1">
-                            ★★★★★
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- FOOTER -->
-
-        <footer id="contact" class="bg-cover bg-center text-[#F9E6CD]"
-            style="background-image:url('image/greenbc.jpg')">
-
-
-            <!-- CONTACT DETAILS -->
-
-            <div class="px-6 md:px-10 lg:px-16 py-8
-    flex flex-col lg:flex-row justify-between
-    items-center gap-7">
-
-                <p class="text-center lg:text-left text-base md:text-lg">
-
-                    <i class="fa-regular fa-clock text-2xl mr-3"></i>
-
-                    Business Hours: Open Daily • 4 PM – 12 AM
-
-                </p>
-
-
-                <p class="text-lg">
-
-                    <i class="fa-solid fa-phone mr-3"></i>
-                    +91 98765 43210
-
-                </p>
-
-
-                <a href="tel:+919876543210" class="bg-[#F9E6CD] text-[#262917] px-7 py-4
-        rounded-full font-semibold hover:bg-[#E8C18A]
-        hover:-translate-y-1 transition duration-300">
-
-                    <i class="fa-regular fa-calendar-days mr-2"></i>
-
-                    Reserve a Table
-
-                    <i class="fa-solid fa-arrow-right ml-2"></i>
-
-                </a>
-
-            </div>
-
-
-            <!-- DIVIDER -->
-
-            <div class="border-t border-[#E8C18A]
-    mx-6 md:mx-10 lg:mx-16">
-            </div>
-
-
-            <!-- FOOTER CONTENT -->
-
-            <div class="px-6 md:px-10 lg:px-16 py-10
-    flex flex-col lg:flex-row justify-between
-    items-center gap-8">
-
-
-                <div class="text-center lg:text-left">
-
-                    <h2 class="text-4xl md:text-5xl font-semibold
-            animate-pulse">
-
-                        <i class="fa-solid fa-star-and-crescent"></i>
-                        MOON
-
-                    </h2>
-
-                    <p class="text-sm mt-1">
-                        The Dreamy Garden Café
-                    </p>
-
-                </div>
-
-
-                <!-- FOOTER MENU -->
-
-                <ul class="flex flex-wrap justify-center
-        gap-4 md:gap-6 text-xs md:text-sm tracking-[2px]">
-
-                    <li>GOOD COFFEE</li>
-                    <li>• GOOD MOOD</li>
-                    <li>• GREAT COMPANY</li>
-
-                </ul>
-
-
-                <!-- SOCIAL MEDIA -->
-
-                <div class="flex gap-6 text-2xl">
-
-                    <a href="#" aria-label="Instagram" class="hover:text-[#E8C18A] hover:-translate-y-2
-            transition duration-300">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
-
-                    <a href="#" aria-label="Facebook" class="hover:text-[#E8C18A] hover:-translate-y-2
-            transition duration-300">
-
-                        <i class="fa-brands fa-facebook"></i>
-
-                    </a>
-
-                    <a href="#" aria-label="YouTube" class="hover:text-[#E8C18A] hover:-translate-y-2
-            transition duration-300">
-
-                        <i class="fa-brands fa-youtube"></i>
-
-                    </a>
-
-                    <a href="#" aria-label="Pinterest" class="hover:text-[#E8C18A] hover:-translate-y-2
-            transition duration-300">
-
-                        <i class="fa-brands fa-pinterest"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </footer>
-
-    </main>
+  </footer>
 
 </body>
-
 </html>
