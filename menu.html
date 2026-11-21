@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,126 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Moon Cafe | Menu</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+ 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        section[id] {
+            scroll-margin-top: 30px;
+        }
+    </style>
 
 </head>
 
-<body class="font-['Poppins',sans-serif] w-full min-w-0 overflow-x-clip bg-[#F9E6CD] dark:bg-[#26251F]">
+<body class="font-['Poppins',sans-serif] bg-[#F9E6CD] dark:bg-[#26251F]">
+
  
-    <header class="relative w-full min-h-[350px] sm:min-h-[420px] lg:min-h-[500px]
+
+    <header class="relative w-full min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]
     bg-[url('image/menuhd.jpg')] bg-cover bg-center bg-no-repeat
     flex flex-col overflow-hidden">
 
-        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 bg-black/40"></div>
  
-        <div class="fixed top-0 left-0 z-50 w-full bg-[#202717]/90 backdrop-blur-md shadow-md">
 
-            <div class="w-full max-w-[1700px] mx-auto
-            flex flex-wrap justify-between items-center
-            gap-4 px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="sticky top-0 z-50 w-full bg-[#202717]/95
+        backdrop-blur-md shadow-md" aria-label="Main navigation">
 
-                <a href="index.html" class="flex items-center gap-3">
+            <div class="max-w-[1400px] mx-auto w-full
+            px-3 sm:px-5 lg:px-8 py-3
+            flex flex-wrap justify-between items-center gap-3">
 
-                    <div class="text-[#F9E6CD] text-4xl sm:text-5xl
-                    transition duration-500 hover:scale-110">
+         
 
-                        <i class="fa-solid fa-star-and-crescent"></i>
+                <a href="index.html" class="flex items-center gap-2 sm:gap-3">
 
-                    </div>
+                    <i class="fa-solid fa-star-and-crescent
+                    text-[#F9E6CD] text-3xl sm:text-4xl"></i>
 
                     <div>
-
-                        <h1 class="text-[#F9E6CD] text-3xl sm:text-4xl
+                        <h1 class="text-[#F9E6CD] text-2xl sm:text-3xl
                         font-semibold font-['Playfair_Display',serif]">
-
                             MOON
-
                         </h1>
 
-                        <p class="text-[#F9E6CD] text-[10px] sm:text-xs font-semibold">
-
+                        <p class="text-[#F9E6CD] text-[9px] sm:text-xs font-semibold">
                             The Dreamy Garden Cafe
-
                         </p>
-
                     </div>
 
                 </a>
 
-                <nav class="w-full md:w-auto" aria-label="Main navigation">
+           
 
-                    <ul class="flex flex-wrap justify-center
-                    items-center gap-4 sm:gap-6 lg:gap-9
-                    text-[#F9E6CD] text-xs sm:text-sm lg:text-base font-semibold">
-
-                        <li>
-                            <a href="index.html"
-                                class="hover:text-[#E8C18A] transition duration-300">
-                                Home
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="menu.html"
-                                class="text-[#E8C18A] underline underline-offset-8">
-                                Menu
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="gallery.html"
-                                class="hover:text-[#E8C18A] transition duration-300">
-                                Gallery
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="ourstory.html"
-                                class="hover:text-[#E8C18A] transition duration-300">
-                                Our Story
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="index.html#contact"
-                                class="hover:text-[#E8C18A] transition duration-300">
-                                Contact
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-                <a href="index.html#contact"
-                    class="border-2 border-[#E8C18A] rounded-full
-                    px-4 py-2 text-[#F9E6CD] font-semibold text-xs sm:text-sm
-                    transition duration-500 hover:bg-[#E8C18A]
-                    hover:text-[#262917]">
+                <a href="index.html#contact" class="order-2 lg:order-3 border border-[#E8C18A]
+                rounded-full px-3 sm:px-4 py-2
+                text-[#F9E6CD] text-[11px] sm:text-sm font-semibold
+                hover:bg-[#E8C18A] hover:text-[#262917] transition">
 
                     <i class="fa-regular fa-calendar-days mr-1"></i>
                     Reserve a Table
 
                 </a>
+ 
+                <ul class="order-3 lg:order-2 w-full lg:w-auto
+                flex flex-wrap justify-center items-center
+                gap-x-4 sm:gap-x-6 lg:gap-x-5 xl:gap-x-8
+                gap-y-3 text-[#F9E6CD]
+                text-xs sm:text-sm font-semibold">
+
+                    <li>
+                        <a href="index.html" class="hover:text-[#E8C18A] transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html" class="text-[#E8C18A] underline underline-offset-8">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html" class="hover:text-[#E8C18A] transition">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="ourstory.html" class="hover:text-[#E8C18A] transition">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contact" class="hover:text-[#E8C18A] transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
 
             </div>
 
-        </div>
+        </nav>
  
-        <div class="relative z-10 w-full max-w-[1700px] mx-auto
-        flex flex-col justify-center flex-1
-        px-5 sm:px-8 lg:px-10 pt-28 pb-12">
+
+        <div class="relative z-10 flex-1 w-full max-w-[1400px]
+        mx-auto flex flex-col justify-center
+        px-4 sm:px-8 lg:px-10 py-12 sm:py-16">
 
             <div class="max-w-2xl">
 
@@ -135,15 +150,12 @@
                 font-['Playfair_Display',serif]">
 
                     Our
-
-                    <span class="italic text-[#E8C18A]">
-                        Menu
-                    </span>
+                    <span class="italic text-[#E8C18A]">Menu</span>
 
                 </h2>
 
-                <p class="text-[#F9E6CD] text-base sm:text-xl
-                mt-5 max-w-md text-center sm:text-left">
+                <p class="text-[#F9E6CD] text-sm sm:text-lg lg:text-xl
+                mt-4 max-w-md">
 
                     A delightful blend of flavours
                     in a dreamy ambience.
@@ -151,7 +163,7 @@
                 </p>
 
                 <div class="flex items-center gap-4 mt-5
-                text-[#E8C18A] max-w-[300px]">
+                text-[#E8C18A] max-w-[280px]">
 
                     <div class="h-[2px] bg-[#E8C18A] flex-1"></div>
 
@@ -161,10 +173,10 @@
 
                 </div>
 
-                <a href="#menu-categories"
-                    class="inline-block mt-6 bg-[#F9E6CD] text-[#262917]
-                    px-6 py-3 rounded-full font-bold text-sm sm:text-base
-                    transition-all duration-500 hover:scale-105 hover:bg-[#E8C18A]">
+                <a href="#menu-categories" class="inline-block mt-6 bg-[#F9E6CD]
+                text-[#262917] px-5 sm:px-6 py-3
+                rounded-full font-bold text-sm sm:text-base
+                hover:bg-[#E8C18A] hover:scale-105 transition">
 
                     Explore Our Menu
 
@@ -176,117 +188,117 @@
 
     </header>
 
+ 
 
     <main class="w-full min-w-0">
+ 
 
-        <section id="menu-categories" class="relative w-full min-w-0
-        bg-[url('image/whitebc.jpg')]
-        bg-cover bg-center bg-no-repeat
-        dark:bg-blend-multiply dark:bg-[#262917]
-        px-3 min-[768px]:px-5 min-[1280px]:px-6
-        py-10 min-[768px]:py-12 overflow-hidden">
+        <section id="menu-categories" class="w-full px-3 sm:px-5 lg:px-8
+        py-10 sm:py-12
+        bg-[url('image/whitebc.jpg')] bg-cover bg-center
+        dark:bg-blend-multiply dark:bg-[#262917]">
 
-            <div class="w-full min-w-0 max-w-none mx-auto">
+            <div class="w-full max-w-[1400px] mx-auto">
 
-                <h2 class="text-center text-3xl min-[768px]:text-4xl min-[1280px]:text-5xl
+                <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl
                 font-semibold text-[#262917] dark:text-[#F9E6CD]
-                font-['Playfair_Display',serif]
-                mb-8 min-[768px]:mb-10">
+                font-['Playfair_Display',serif] mb-8 sm:mb-10">
 
                     Explore Our Categories
 
                 </h2>
 
-                <div class="grid grid-cols-1 min-[768px]:grid-cols-2
-                min-[1280px]:grid-cols-4 gap-4 min-[768px]:gap-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2
+                lg:grid-cols-4 gap-4 sm:gap-5">
+ 
 
-                    <div class="w-full min-w-0 flex flex-col items-center justify-center
+                    <a href="#indian-snacks" class="flex flex-col items-center justify-center
                     gap-3 p-5 border border-[#A66B3F]/40
-                    shadow-sm rounded-xl bg-white/60
-                    dark:bg-[#F9E6CD]/10 dark:border-[#E8C18A]/40
-                    transition-all duration-500
-                    hover:shadow-xl hover:bg-[#F9E6CD] dark:hover:bg-[#F9E6CD]/20">
+                    rounded-xl bg-white/60 shadow-sm
+                    dark:bg-[#F9E6CD]/10
+                    hover:shadow-xl hover:-translate-y-1 transition">
 
                         <i class="fa-solid fa-bowl-food text-4xl
-                        text-[#262917] dark:text-[#E8C18A]
-                        transition duration-500 hover:scale-125 hover:text-[#A66B3F]"></i>
+                        text-[#262917] dark:text-[#E8C18A]"></i>
 
-                        <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        text-xl text-center font-['Playfair_Display',serif]">
+                        <h3 class="text-xl text-center font-semibold
+                        text-[#262917] dark:text-[#F9E6CD]
+                        font-['Playfair_Display',serif]">
                             Indian Snacks
                         </h3>
 
-                        <p class="text-[#262917] dark:text-[#F9E6CD] text-sm font-medium">
+                        <p class="text-sm text-[#262917] dark:text-[#F9E6CD]">
                             Traditional Bites
                         </p>
 
-                    </div>
+                    </a>
+ 
 
-                    <div class="w-full min-w-0 flex flex-col items-center justify-center
+                    <a href="#fast-food" class="flex flex-col items-center justify-center
                     gap-3 p-5 border border-[#A66B3F]/40
-                    shadow-sm rounded-xl bg-white/60
-                    dark:bg-[#F9E6CD]/10 dark:border-[#E8C18A]/40
-                    transition-all duration-500
-                    hover:shadow-xl hover:bg-[#F9E6CD] dark:hover:bg-[#F9E6CD]/20">
+                    rounded-xl bg-white/60 shadow-sm
+                    dark:bg-[#F9E6CD]/10
+                    hover:shadow-xl hover:-translate-y-1 transition">
 
                         <i class="fa-solid fa-burger text-4xl
-                        text-[#262917] dark:text-[#E8C18A]
-                        transition duration-500 hover:scale-125 hover:text-[#A66B3F]"></i>
+                        text-[#262917] dark:text-[#E8C18A]"></i>
 
-                        <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        text-xl text-center font-['Playfair_Display',serif]">
+                        <h3 class="text-xl text-center font-semibold
+                        text-[#262917] dark:text-[#F9E6CD]
+                        font-['Playfair_Display',serif]">
                             Fast Food
                         </h3>
 
-                        <p class="text-[#262917] dark:text-[#F9E6CD] text-sm font-medium">
+                        <p class="text-sm text-[#262917] dark:text-[#F9E6CD]">
                             Quick Bites
                         </p>
 
-                    </div>
+                    </a>
+ 
 
-                    <div class="w-full min-w-0 flex flex-col items-center justify-center
+                    <a href="#cakes" class="flex flex-col items-center justify-center
                     gap-3 p-5 border border-[#A66B3F]/40
-                    shadow-sm rounded-xl bg-white/60
-                    dark:bg-[#F9E6CD]/10 dark:border-[#E8C18A]/40
-                    transition-all duration-500
-                    hover:shadow-xl hover:bg-[#F9E6CD] dark:hover:bg-[#F9E6CD]/20">
+                    rounded-xl bg-white/60 shadow-sm
+                    dark:bg-[#F9E6CD]/10
+                    hover:shadow-xl hover:-translate-y-1 transition">
 
                         <i class="fa-solid fa-cheese text-4xl
-                        text-[#262917] dark:text-[#E8C18A]
-                        transition duration-500 hover:scale-125 hover:text-[#A66B3F]"></i>
+                        text-[#262917] dark:text-[#E8C18A]"></i>
 
-                        <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        text-xl text-center font-['Playfair_Display',serif]">
+                        <h3 class="text-xl text-center font-semibold
+                        text-[#262917] dark:text-[#F9E6CD]
+                        font-['Playfair_Display',serif]">
                             Cakes & Desserts
                         </h3>
 
-                        <p class="text-[#262917] dark:text-[#F9E6CD] text-sm font-medium">
+                        <p class="text-sm text-[#262917] dark:text-[#F9E6CD]">
                             Sweet Happiness
                         </p>
 
-                    </div>
+                    </a>
 
-                    <div class="w-full min-w-0 flex flex-col items-center justify-center
+               
+
+                    <a href="#beverages" class="flex flex-col items-center justify-center
                     gap-3 p-5 border border-[#A66B3F]/40
-                    shadow-sm rounded-xl bg-white/60
-                    dark:bg-[#F9E6CD]/10 dark:border-[#E8C18A]/40
-                    transition-all duration-500
-                    hover:shadow-xl hover:bg-[#F9E6CD] dark:hover:bg-[#F9E6CD]/20">
+                    rounded-xl bg-white/60 shadow-sm
+                    dark:bg-[#F9E6CD]/10
+                    hover:shadow-xl hover:-translate-y-1 transition">
 
                         <i class="fa-solid fa-glass-water text-4xl
-                        text-[#262917] dark:text-[#E8C18A]
-                        transition duration-500 hover:scale-125 hover:text-[#A66B3F]"></i>
+                        text-[#262917] dark:text-[#E8C18A]"></i>
 
-                        <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        text-xl text-center font-['Playfair_Display',serif]">
+                        <h3 class="text-xl text-center font-semibold
+                        text-[#262917] dark:text-[#F9E6CD]
+                        font-['Playfair_Display',serif]">
                             Beverages
                         </h3>
 
-                        <p class="text-[#262917] dark:text-[#F9E6CD] text-sm font-medium">
+                        <p class="text-sm text-[#262917] dark:text-[#F9E6CD]">
                             Sip & Relax
                         </p>
 
-                    </div>
+                    </a>
 
                 </div>
 
@@ -294,261 +306,439 @@
 
         </section>
 
-        <section class="w-full min-w-0 bg-[#F9E6CD] dark:bg-[#26251F]
-        px-2 min-[375px]:px-3 min-[768px]:px-5 min-[1280px]:px-6
-        py-10 min-[768px]:py-12 overflow-hidden">
+ 
 
-            <div class="w-full min-w-0 max-w-none mx-auto
-            grid grid-cols-1
-            min-[1280px]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(200px,0.65fr)]
-            gap-5 min-[768px]:gap-7 min-[1280px]:gap-5 items-start">
+        <section class="w-full min-w-0
+        bg-[#F9E6CD] dark:bg-[#26251F]
+        px-3 sm:px-5 lg:px-8 py-10 sm:py-12">
+ 
 
-                <div class="w-full min-w-0 flex flex-col gap-10">
+            <div class="w-full max-w-[1400px] mx-auto
+            grid grid-cols-1 gap-10 sm:gap-12">
 
-                    <section class="w-full min-w-0">
+          
 
-                        <h2 class="text-center mb-6 text-2xl min-[768px]:text-3xl
-                        min-[1280px]:text-4xl font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        font-['Playfair_Display',serif]">
-                            Indian Snacks
-                        </h2>
+                <section id="indian-snacks" class="w-full min-w-0">
 
-                        <div class="grid grid-cols-2 min-[768px]:grid-cols-3 gap-3 min-[768px]:gap-4">
+                    <h2 class="text-center mb-6 sm:mb-8
+                    text-2xl sm:text-3xl lg:text-4xl
+                    font-semibold text-[#262917] dark:text-[#F9E6CD]
+                    font-['Playfair_Display',serif]">
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        Indian Snacks
 
-                                <img src="image/masala-papad.png" alt="Masala Papad"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                    </h2>
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                    <div class="grid grid-cols-2 sm:grid-cols-3
+                    lg:grid-cols-4 gap-3 sm:gap-5">
+
+                  
+
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/masala-papad.png" alt="Masala Papad" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     Masala Papad
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹249
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        </article>
 
-                                <img src="image/samosa.avif" alt="Samosa"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                     
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/samosa.avif" alt="Samosa" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     Samosa
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹129
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        </article>
 
-                                <img src="image/alootikki.jpg" alt="Aloo Tikki"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/alootikki.jpg" alt="Aloo Tikki" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     Aloo Tikki
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹129
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                        </div>
+                        </article>
 
-                    </section>
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
 
-                    <section class="w-full min-w-0">
+                            <img src="image/dahipuri.jpg" alt="Aloo Tikki" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
 
-                        <h2 class="text-center mb-6 text-2xl min-[768px]:text-3xl
-                        min-[1280px]:text-4xl font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        font-['Playfair_Display',serif]">
-                            Cakes & Desserts
-                        </h2>
+                            <div class="p-3 text-center">
 
-                        <div class="grid grid-cols-2 min-[768px]:grid-cols-3 gap-3 min-[768px]:gap-4">
-
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
-
-                                <img src="image/spacial cake.jpg" alt="Velvet Crescent"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
-
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[768px]:text-sm text-center mt-3 px-1">
-                                    Velvet Crescent
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
+                                   Dahi Sav Puri
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
-                                    ₹250
-                                </span>
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
+                                    ₹140
+                                </p>
 
-                            </article>
+                            </div>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        </article>
 
-                                <img src="image/truffle.avif" alt="Chocolate Truffle"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                    </div>
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[768px]:text-sm text-center mt-3 px-1">
-                                    Chocolate Truffle
-                                </h3>
+                </section>
+ 
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
-                                    ₹199
-                                </span>
+                <section id="fast-food" class="w-full min-w-0">
 
-                            </article>
+                    <h2 class="text-center mb-6 sm:mb-8
+                    text-2xl sm:text-3xl lg:text-4xl
+                    font-semibold text-[#262917] dark:text-[#F9E6CD]
+                    font-['Playfair_Display',serif]">
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        Fast Food
 
-                                <img src="image/rainbow.jpg" alt="Rainbow Cake"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                    </h2>
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[768px]:text-sm text-center mt-3 px-1">
-                                    Rainbow Cake
-                                </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3
+                    lg:grid-cols-4 gap-3 sm:gap-5">
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
-                                    ₹229
-                                </span>
+                        <!-- Item 1 -->
 
-                            </article>
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
 
-                        </div>
+                            <img src="image/fries.jpg" alt="French Fries" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
 
-                    </section>
+                            <div class="p-3 text-center">
 
-                </div>
-
-                <div class="w-full min-w-0 flex flex-col gap-10">
-
-                    <section class="w-full min-w-0">
-
-                        <h2 class="text-center mb-6 text-2xl min-[768px]:text-3xl
-                        min-[1280px]:text-4xl font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        font-['Playfair_Display',serif]">
-                            Fast Food
-                        </h2>
-
-                        <div class="grid grid-cols-2 min-[768px]:grid-cols-3 gap-3 min-[768px]:gap-4">
-
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
-
-                                <img src="image/fries.jpg" alt="French Fries"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
-
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     French Fries
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹149
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        </article>
 
-                                <img src="image/pizza.jpg" alt="Veg Pizza"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                        <!-- Item 2 -->
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/pizza.jpg" alt="Veg Pizza" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     Veg Pizza
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹249
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        </article>
 
-                                <img src="image/burger.jpg" alt="Cheese Burger"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                        <!-- Item 3 -->
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/burger.jpg" alt="Cheese Burger" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     Cheese Burger
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹350
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                        </div>
+                        </article>
 
-                    </section>
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
 
-                    <section class="w-full min-w-0">
+                            <img src="image/Maegherita.avif" alt="Cheese Burger" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
 
-                        <h2 class="text-center mb-6 text-2xl min-[768px]:text-3xl
-                        min-[1280px]:text-4xl font-semibold text-[#262917] dark:text-[#F9E6CD]
-                        font-['Playfair_Display',serif]">
-                            Beverages
-                        </h2>
+                            <div class="p-3 text-center">
 
-                        <div class="grid grid-cols-2 min-[768px]:grid-cols-3 gap-3 min-[768px]:gap-4">
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
+                                    Maegherita Pizza
+                                </h3>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
+                                    ₹280
+                                </p>
 
-                                <img src="image/masala chay.jpg" alt="Masala Chai"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                            </div>
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Cakes and Desserts -->
+
+                <section id="cakes" class="w-full min-w-0">
+
+                    <h2 class="text-center mb-6 sm:mb-8
+                    text-2xl sm:text-3xl lg:text-4xl
+                    font-semibold text-[#262917] dark:text-[#F9E6CD]
+                    font-['Playfair_Display',serif]">
+
+                        Cakes & Desserts
+
+                    </h2>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3
+                    lg:grid-cols-4 gap-3 sm:gap-5">
+
+                        <!-- Item 1 -->
+
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/spacial cake.jpg" alt="Velvet Crescent" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
+                                    Velvet Crescent
+                                </h3>
+
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
+                                    ₹250
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Item 2 -->
+
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/truffle.avif" alt="Chocolate Truffle" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
+                                    Chocolate Truffle
+                                </h3>
+
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
+                                    ₹199
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Item 3 -->
+
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/rainbow.jpg" alt="Rainbow Cake" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
+                                    Rainbow Cake
+                                </h3>
+
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
+                                    ₹229
+                                </p>
+
+                            </div>
+
+                        </article>
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/Browine.jpg" alt="Rainbow Cake" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
+                                    Browine
+                                </h3>
+
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
+                                    ₹160
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Beverages -->
+
+                <section id="beverages" class="w-full min-w-0">
+
+                    <h2 class="text-center mb-6 sm:mb-8
+                    text-2xl sm:text-3xl lg:text-4xl
+                    font-semibold text-[#262917] dark:text-[#F9E6CD]
+                    font-['Playfair_Display',serif]">
+
+                        Beverages
+
+                    </h2>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3
+                    lg:grid-cols-4 gap-3 sm:gap-5">
+
+                        <!-- Item 1 -->
+
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/masala chay.jpg" alt="Masala Chai" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     Masala Chai
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹199
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
-                            bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
+                        </article>
 
-                                <img src="image/cold coffe.jpg" alt="Cold Coffee"
-                                loading="lazy" class="block w-full max-w-full aspect-[4/3] object-cover">
+                        <!-- Item 2 -->
 
-                                <h3 class="font-semibold text-[#262917] dark:text-[#F9E6CD]
-                                text-xs min-[375px]:text-sm text-center mt-3 px-1">
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
+
+                            <img src="image/cold coffe.jpg" alt="Cold Coffee" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
+
+                            <div class="p-3 text-center">
+
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
                                     Cold Coffee
                                 </h3>
 
-                                <span class="font-bold block text-center text-[#262917] dark:text-[#E8C18A] pb-3">
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
                                     ₹219
-                                </span>
+                                </p>
 
-                            </article>
+                            </div>
 
-                            <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
+                        </article>
+
+                        <!-- Item 3 -->
+                         
+                         <article class="w-full min-w-0 shadow-sm rounded-xl overflow-hidden
                             bg-white/50 dark:bg-white/10 transition-all duration-500 hover:shadow-xl">
 
                                 <img src="image/moctail.jpg" alt="Mocktails"
@@ -565,32 +755,93 @@
 
                             </article>
 
-                        </div>
+                
 
-                    </section>
+                        <article class="min-w-0 rounded-xl overflow-hidden
+                        bg-white/50 dark:bg-white/10 shadow-sm
+                        hover:shadow-xl transition">
 
-                </div>
+                            <img src="image/Matcha.jpg" alt="Mocktails" loading="lazy"
+                                class="w-full aspect-[4/3] object-cover">
 
-                <aside class="w-full min-w-0 flex flex-col
-                items-center justify-center gap-5 p-2 min-[768px]:p-3">
+                            <div class="p-3 text-center">
 
-                    <h2 class="text-2xl min-[768px]:text-3xl text-center
-                    font-semibold text-[#262917] dark:text-[#F9E6CD]
-                    font-['Playfair_Display',serif]">
+                                <h3 class="font-semibold text-sm sm:text-base
+                                text-[#262917] dark:text-[#F9E6CD]">
+                                    Matcha Latte
+                                </h3>
 
-                        Good Food ♡
-                        <br>
-                        Good Mood
+                                <p class="font-bold mt-2
+                                text-[#A66B3F] dark:text-[#E8C18A]">
+                                    ₹195
+                                </p>
 
-                    </h2>
+                            </div>
 
-                    <img src="image/coffe02.jpg" alt="Good Food Good Mood Coffee"
-                    loading="lazy"
-                    class="block w-full max-w-[260px] min-[768px]:max-w-[350px]
-                    min-[1280px]:max-w-full aspect-[2/3] object-cover rounded-[20px]
-                    shadow-lg transition-all duration-700 hover:scale-[1.02]">
+                        </article>
+
+                    </div>
+
+                </section>
+                
+
+
+
+                <!-- Good Food Good Mood Section -->
+
+                <aside class="w-full max-w-4xl mx-auto my-8
+              px-5 py-8 sm:px-8 sm:py-10
+              bg-[#F8DDBB] dark:bg-[#30291F]
+              rounded-3xl shadow-md
+              flex flex-col sm:flex-row
+              items-center justify-center
+              gap-6 sm:gap-10">
+
+                    <!-- Text Content -->
+                    <div class="text-center sm:text-left
+                flex flex-col items-center sm:items-start
+                gap-3">
+
+                        <p class="text-sm uppercase tracking-[4px]
+                  text-[#9B7045] dark:text-[#D8AE7C]">
+                            Made with Love
+                        </p>
+
+                        <h2 class="text-3xl sm:text-4xl
+                   font-semibold leading-tight
+                   text-[#262917] dark:text-[#F9E6CD]
+                   font-['Playfair_Display',serif]">
+
+                            Good Food ♡
+                            <br>
+                            Good Mood
+
+                        </h2>
+
+                        <p class="max-w-xs text-sm sm:text-base
+                  text-center sm:text-left
+                  text-[#66513C] dark:text-[#E5D4BE]
+                  leading-relaxed">
+
+                            Freshly brewed coffee and delicious moments
+                            make every day a little more special.
+
+                        </p>
+
+                        <span class="text-2xl text-[#9B7045]">☕</span>
+
+                    </div>
+
+                    <!-- Coffee Image -->
+                    <img src="image/coffe02.jpg" alt="Good Food Good Mood Coffee" loading="lazy" class="w-44 sm:w-52 lg:w-56
+                h-60 sm:h-64 lg:h-72
+                object-cover rounded-2xl
+                shadow-lg
+                hover:scale-[1.03]
+                transition duration-500">
 
                 </aside>
+
 
             </div>
 
@@ -598,45 +849,115 @@
 
     </main>
 
-    <footer class="w-full min-w-0
-    bg-[#26251F] text-center
-    flex flex-col items-center justify-center
-    px-3 min-[768px]:px-5 py-10 min-[768px]:py-12 overflow-hidden">
 
-        <h2 class="text-[#F9E6CD] text-4xl min-[768px]:text-5xl
-        font-bold font-['Playfair_Display',serif]
-        transition duration-500 hover:scale-105">
+    <footer class="bg-[#202719] text-[#f8e4c1] border-t border-[#c9a66b]">
 
-            <i class="fa-solid fa-star-and-crescent"></i>
-            Moon Cafe
+        <!-- Footer Main -->
+        <div class="max-w-7xl mx-auto px-6 py-12">
 
-        </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-        <p class="text-[#E8C18A] mt-3 text-base min-[768px]:text-lg font-semibold">
-            The Dreamy Garden Cafe
-        </p>
+                <!-- Logo and About -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-5xl text-[#f5d49b]">☾</span>
+                        <div>
+                            <h2 class="text-3xl font-serif tracking-widest">MOON</h2>
+                            <p class="text-xs">The Dreamy Garden Café</p>
+                        </div>
+                    </div>
 
-        <div class="flex items-center justify-center
-        gap-7 mt-7 text-2xl text-[#F9E6CD]">
+                    <p class="text-sm leading-7 text-[#e6d5b9]">
+                        A little escape under the moon.
+                        Enjoy great coffee, delicious food
+                        and unforgettable moments.
+                    </p>
+                </div>
 
-            <a href="#" aria-label="Instagram" class="transition duration-300 hover:text-[#E8C18A] hover:scale-125">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-serif mb-5">Quick Links</h3>
 
-            <a href="#" aria-label="Facebook" class="transition duration-300 hover:text-[#E8C18A] hover:scale-125">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-[#d8ad69]">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-[#d8ad69]">Menu</a></li>
+                        <li><a href="gallery.html" class="hover:text-[#d8ad69]">Gallery</a></li>
+                        <li><a href="our-story.html" class="hover:text-[#d8ad69]">Our Story</a></li>
+                        <li><a href="contact.html" class="hover:text-[#d8ad69]">Contact</a></li>
+                    </ul>
+                </div>
 
-            <a href="#" aria-label="WhatsApp" class="transition duration-300 hover:text-[#E8C18A] hover:scale-125">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-serif mb-5">Contact Us</h3>
+
+                    <ul class="space-y-4 text-sm">
+                        <li> Jaipur, Rajasthan, India</li>
+
+                        <li>
+                            
+                            <a href="tel:+919876543210" class="hover:text-[#d8ad69]">
+                                +91 98765 43210
+                            </a>
+                        </li>
+
+                        <li>
+                            
+                            <a href="contact.html" class="hover:text-[#d8ad69]">
+                                Send us a message
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div>
+                    <h3 class="text-xl font-serif mb-5">Opening Hours</h3>
+
+                    <p class="text-sm mb-3">Monday – Sunday</p>
+
+                    <p class="text-sm text-[#d8ad69]">
+                        4:00 PM – 12:00 AM
+                    </p>
+
+                    <p class="text-sm mt-4">
+                        Come and enjoy your dreamy evening with us!
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-[#a58b60] mt-10 pt-6">
+
+                <div class="flex flex-col md:flex-row justify-between
+                  items-center gap-5">
+
+                    <p class="text-sm text-center">
+                        © 2026 MOON – The Dreamy Garden Café.
+                        All Rights Reserved.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="flex gap-6 text-xl">
+                        <a href="#" aria-label="Instagram" class="hover:text-[#d8ad69]">◎</a>
+
+                        <a href="#" aria-label="Facebook" class="hover:text-[#d8ad69]">f</a>
+
+                        <a href="#" aria-label="YouTube" class="hover:text-[#d8ad69]">▶️</a>
+
+                        <a href="#" aria-label="Pinterest" class="hover:text-[#d8ad69]">P</a>
+                    </div>
+
+                </div>
+
+                <p class="text-center text-xs tracking-[4px] mt-6">
+                    GOOD COFFEE • GOOD MOOD • GREAT COMPANY
+                </p>
+
+            </div>
 
         </div>
-
-        <p class="text-[#E8C18A] mt-8 text-sm min-[768px]:text-base font-semibold">
-            © 2026 Moon Cafe. All Rights Reserved.
-        </p>
-
     </footer>
 
 </body>
